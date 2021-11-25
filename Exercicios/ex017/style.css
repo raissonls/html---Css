@@ -1,0 +1,32 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /*
+    Medidas Absolutas: 
+    cm, mm, in, px, pt, pc
+    
+    Medidas Relativas
+    em (tamanho atual da fonte), ex(tamanho da altura x da fonte), rem (relativa a fonte que ta no body), vw (% da view port), vh (altura da view Porte)
+    */
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    /*
+    shorthands
+    font-style, font-weight, font-size, font-family
+    */
+    font: italic bold 3em 'Roboto', sans-serif;
+}
+
+h1{
+    font: italic bold 3em 'Roboto', sans-serif;
+}

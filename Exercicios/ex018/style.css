@@ -1,0 +1,15 @@
+@charset "UTF8";
+
+@font-face {
+    font-family: 'Balloon Party';
+    src: url(Balloon\ Party.ttf)
+}
+
+body{
+    font-family: 'Ballon Party';
+    font-size: 1.5em;
+}
+
+h1{
+    font-size: 3em;
+}

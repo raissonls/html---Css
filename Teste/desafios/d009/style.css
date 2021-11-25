@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: #1d1d1d;
+}
+
+h1{
+    color: #fdfdfd;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    color: #fdfdfd;
+}
+
+iframe{
+    display: block;
+    width: 720px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
