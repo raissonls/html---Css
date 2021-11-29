@@ -1,2 +1,131 @@
 @charset "UTF8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root{
+    --cor0:#BED95F;
+    --cor1:#C7D989;
+    --cor2:#D9843B;
+    --cor3:#F26835;
+    --cor4:#F25835;
+    --cor5:#FAFAFA;
+    --cor6:#FFFFFF;
+    --cor7:#000000;
+
+
+    --fonte-mão: 'Cookie', cursive;
+    --font-padrão: 'Source Sans Pro', sans-serif;;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor6);
+    font-family: var(--font-padrão);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+header > img{
+    margin: 0px auto 20px auto;
+}
+
+header > p{
+    font-family: var(--fonte-mão);
+    color: var(--cor5);
+    font-size: 1.9em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.582);
+    font-style: oblique;
+    max-width: 600px;
+    padding: 0px 12px 12px 12px;
+    margin: auto;
+}
+
+nav{
+    background-color: var(--cor0);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.096);
+    padding: 10px;
+}
+
+nav > a{
+    color: var(--cor3);
+    font-family: var(--fonte-mão);
+    font-weight: bolder;
+    font-size: 1.6em;
+    padding: 8px;
+    margin: 10px 2px;
+    text-decoration: none;
+    transition: linear;
+    transition-duration: 0.5s;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.24);
+
+}
+
+nav >a:hover{
+    background-color: var(--cor4);
+    border-radius: 10px 10px 0px 0px;
+    color: var(--cor6);
+}
+
+main{
+    background-color:var(--cor5);
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.flex{
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex div{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.flex div > picture{
+    background-color: #d9853b25;
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);
+}
+
+.flex div > picture > img{
+    margin: auto;
+}
+
+.flex div > picture > p{
+    font-family: var(--fonte-mão);
+    font-size: 2em;
+    font-style: oblique;
+    font-weight: bold;
+    color: var(--cor4);
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.048);
+}
+footer{
+
+}
+
