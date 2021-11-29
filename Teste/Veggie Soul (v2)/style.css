@@ -1,7 +1,29 @@
 @charset "UTF8";
 
 
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'MoonTime';
+    src: url('fonts/MoonTime-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Intro Rust';
+    src: url('fonts/IntroScriptR-H2Base.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Intro Rust Destaque';
+    src: url('fonts/IntroRustG-Base2Line.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Intro Rust Padrão';
+    src: url('fonts/IntroHeadR-Base.otf') format('opentype');
+    font-weight: normal;
+}
 
 :root{
     --cor0:#BED95F;
@@ -14,8 +36,10 @@
     --cor7:#000000;
 
 
-    --fonte-mão: 'Cookie', cursive;
-    --font-padrão: 'Source Sans Pro', sans-serif;;
+    --fonte-Titulos: 'MoonTime', cursive;
+    --fonte-mão: 'Intro Rust', cursive;
+    --fonte-destaque: 'Intro Rust Destaque', cursive;
+    --fonte-padrão: 'Intro Rust Padrão', sans-serif;;
 }
 
 *{
@@ -42,9 +66,9 @@ header > img{
 header > p{
     font-family: var(--fonte-mão);
     color: var(--cor5);
-    font-size: 1.9em;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.582);
+    font-size: 1.6em;
     font-style: oblique;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
     max-width: 600px;
     padding: 0px 12px 12px 12px;
     margin: auto;
@@ -53,15 +77,15 @@ header > p{
 nav{
     background-color: var(--cor0);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.096);
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 
 nav > a{
     color: var(--cor6);
-    font-family: var(--fonte-mão);
+    font-family: var(--fonte-padrão);
     font-weight: bolder;
-    font-size: 1.6em;
-    padding: 8px;
+    font-size: 1.4em;
+    padding: 10px;
     margin: 10px 2px;
     text-decoration: none;
     transition: linear;
@@ -87,14 +111,72 @@ main{
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+
+main > section > p{
+    font-family: var(--fonte-padrão);
+    font-size: 1.3em;
+    text-indent: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+main h2{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    color: var(--cor4);
+    font-size: 1.8em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 20px;
+}
+
+.hamburgueres{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #97412A;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.snacks{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #3D4928;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.301);
+}
+
+.lowcarb{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #8DA966;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.212);
+}
+
+.churrasco{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #753D2D;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.411);
+
+}
 img{
     max-width: 100%;
     display: block;
 }
 
 .flex{
-    margin: 10px;
-    padding: 10px;
+    margin: 0px 10px 20px 10px;
+    padding: 5px 10px;
 }
 
 .flex div{
@@ -105,7 +187,7 @@ img{
 
 .flex div > picture{
     background-color: #d9853b25;
-    flex: 1 1 300px;
+    flex: 1 1 320px;
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
@@ -117,10 +199,9 @@ img{
 }
 
 .flex div > picture > p{
-    font-family: var(--fonte-mão);
-    font-size: 2em;
-    font-style: oblique;
-    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    font-weight: bolder;
     color: var(--cor4);
     text-align: center;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.048);
@@ -130,10 +211,11 @@ footer{
     padding: 35px;
     margin: auto;
     text-align: center;
+    font-family: var(--fonte-padrão);
+    font-size: 1.3em;
 }
 
 footer a{
-    font-family: var(--font-padrão);
     text-decoration: none;
     color: var(--cor5);
 }
