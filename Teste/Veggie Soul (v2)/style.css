@@ -53,11 +53,11 @@ header > p{
 nav{
     background-color: var(--cor0);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.096);
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 nav > a{
-    color: var(--cor3);
+    color: var(--cor6);
     font-family: var(--fonte-mão);
     font-weight: bolder;
     font-size: 1.6em;
@@ -126,6 +126,15 @@ img{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.048);
 }
 footer{
+    background-color: var(--cor4);
+    padding: 35px;
+    margin: auto;
+    text-align: center;
+}
 
+footer a{
+    font-family: var(--font-padrão);
+    text-decoration: none;
+    color: var(--cor5);
 }
 
