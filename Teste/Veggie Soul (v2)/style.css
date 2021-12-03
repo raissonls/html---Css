@@ -191,10 +191,22 @@ img{
     padding: 10px;
     border-radius: 15px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);
+    overflow: hidden;
 }
+
+.flex div > picture:hover{
+    background-color: #d9853b6c;
+}
+
+
 
 .flex div > picture > img{
     margin: auto;
+    transition: all 0.5s;
+}
+
+.flex div > picture > img:hover{
+    transform: scale(1.15);
 }
 
 .flex div > picture > p{
@@ -213,6 +225,7 @@ footer{
     font-family: var(--fonte-padrão);
     font-size: 1.3em;
 }
+
 
 footer a{
     text-decoration: none;
