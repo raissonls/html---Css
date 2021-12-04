@@ -188,7 +188,6 @@ img{
     background-color: #d9853b25;
     flex: 1 1 320px;
     margin: 10px;
-    padding: 10px;
     border-radius: 15px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);
     overflow: hidden;
@@ -202,6 +201,7 @@ img{
 
 .flex div > picture > img{
     margin: auto;
+    padding: 8px;
     transition: all 0.5s;
 }
 
